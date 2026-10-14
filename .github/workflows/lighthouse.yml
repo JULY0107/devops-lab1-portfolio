@@ -20,14 +20,12 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Audit with Lighthouse CI
+      - name: Audit live site with Lighthouse CI
         uses: treosh/lighthouse-ci-action@v12
         with:
-          configPath: ./.lighthouserc.json
+          urls: |
+            https://july0107.github.io/devops-lab1-portfolio/
+            https://july0107.github.io/devops-lab1-portfolio/about.html
+            https://july0107.github.io/devops-lab1-portfolio/contact.html
           uploadArtifacts: true
           temporaryPublicStorage: true
