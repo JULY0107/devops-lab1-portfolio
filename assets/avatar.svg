@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="Avatar Nông Minh Hiếu">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#667eea"/>
+      <stop offset="1" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="url(#bg)"/>
+  <circle cx="100" cy="78" r="34" fill="#ffffff" opacity="0.95"/>
+  <path d="M40 160 C55 125 145 125 160 160 C150 180 130 190 100 190 C70 190 50 180 40 160 Z" fill="#ffffff" opacity="0.95"/>
+  <text x="100" y="188" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">N.M.Hiếu</text>
+</svg>

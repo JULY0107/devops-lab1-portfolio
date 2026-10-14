@@ -22,17 +22,18 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Step 2: Kiểm tra HTML cơ bản
+      # Step 2: Kiểm tra HTML cơ bản (multi-page + avatar)
       - name: Validate HTML
         run: |
-          echo "Checking index.html exists..."
-          if [ -f "index.html" ]; then
-            echo "index.html found!"
-            echo "File size: $(wc -c < index.html) bytes"
-          else
-            echo " index.html NOT found!"
-            exit 1
-          fi
+          echo "Checking required files..."
+          for f in index.html about.html contact.html assets/avatar.svg; do
+            if [ -f "$f" ]; then
+              echo "OK: $f ($(wc -c < "$f") bytes)"
+            else
+              echo "MISSING: $f"
+              exit 1
+            fi
+          done
 
       # Step 3: Deploy lên GitHub Pages
       - name: Deploy to GitHub Pages

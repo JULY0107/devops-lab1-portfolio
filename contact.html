@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ với Nông Minh Hiếu (DTC235180074) — thông tin GitHub và email.">
+    <title>Liên hệ — Nông Minh Hiếu</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: #333;
+            padding: 24px 12px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 640px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        nav { text-align: center; margin-bottom: 24px; }
+        nav a {
+            display: inline-block;
+            margin: 0 6px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #4c51bf;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        nav a[aria-current="page"], nav a:hover { background: #eef0ff; }
+        h1 { color: #4c51bf; font-size: 26px; margin-bottom: 12px; text-align: center; }
+        p, label { line-height: 1.6; font-size: 15px; }
+        .card { background: #f8f9fa; border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
+        a.link { color: #4c51bf; }
+        form { margin-top: 12px; }
+        label { display: block; margin: 10px 0 4px; font-weight: 600; }
+        input, textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #cbd5e0;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: inherit;
+        }
+        button {
+            margin-top: 14px;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 20px;
+            background: #4c51bf;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .footer { margin-top: 24px; font-size: 13px; color: #4a5568; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav aria-label="Điều hướng chính">
+                <a href="index.html">Trang chủ</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="contact.html" aria-current="page">Liên hệ</a>
+            </nav>
+            <h1>Liên hệ</h1>
+        </header>
+        <main>
+            <div class="card">
+                <p><strong>GitHub:</strong> <a class="link" href="https://github.com/JULY0107/devops-lab1-portfolio">JULY0107/devops-lab1-portfolio</a></p>
+                <p><strong>Website live:</strong> <a class="link" href="https://july0107.github.io/devops-lab1-portfolio/">july0107.github.io/devops-lab1-portfolio</a></p>
+                <p><strong>MSSV:</strong> DTC235180074</p>
+            </div>
+            <form action="mailto:nonghieu1412@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Tên của bạn</label>
+                <input id="name" name="name" type="text" placeholder="Nhập tên..." required>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="ban@example.com" required>
+                <label for="message">Lời nhắn</label>
+                <textarea id="message" name="message" rows="4" placeholder="Xin chào Hiếu..." required></textarea>
+                <button type="submit">Gửi liên hệ</button>
+            </form>
+        </main>
+        <footer class="footer">
+            <p><a class="link" href="index.html">← Về trang chủ</a></p>
+        </footer>
+    </div>
+</body>
+</html>

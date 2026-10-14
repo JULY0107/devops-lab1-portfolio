@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giới thiệu về Nông Minh Hiếu (DTC235180074) — kỹ năng DevOps, quá trình học CI/CD.">
+    <title>Giới thiệu — Nông Minh Hiếu</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: #333;
+            padding: 24px 12px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 640px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        nav { text-align: center; margin-bottom: 24px; }
+        nav a {
+            display: inline-block;
+            margin: 0 6px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #4c51bf;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        nav a[aria-current="page"], nav a:hover { background: #eef0ff; }
+        h1 { color: #4c51bf; font-size: 26px; margin-bottom: 12px; text-align: center; }
+        h2 { color: #553c9a; font-size: 18px; margin: 20px 0 10px; }
+        p, li { line-height: 1.6; font-size: 15px; }
+        ul { margin-left: 20px; }
+        .card { background: #f8f9fa; border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
+        a.link { color: #4c51bf; }
+        .footer { margin-top: 24px; font-size: 13px; color: #4a5568; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav aria-label="Điều hướng chính">
+                <a href="index.html">Trang chủ</a>
+                <a href="about.html" aria-current="page">Giới thiệu</a>
+                <a href="contact.html">Liên hệ</a>
+            </nav>
+            <h1>Giới thiệu bản thân</h1>
+        </header>
+        <main>
+            <div class="card">
+                <p><strong>Họ tên:</strong> Nông Minh Hiếu — <strong>MSSV:</strong> DTC235180074</p>
+                <p>Sinh viên thực hành DevOps Lab 1: Git, GitHub Actions, CI/CD, GitHub Pages, Lighthouse CI.</p>
+            </div>
+            <h2>Kỹ năng đang học</h2>
+            <ul>
+                <li>Git &amp; GitHub: clone, branch, commit, push, pull request</li>
+                <li>CI/CD với GitHub Actions: build → validate → deploy tự động</li>
+                <li>GitHub Pages: publish website tĩnh từ nhánh <code>gh-pages</code></li>
+                <li>Chất lượng web: Lighthouse CI (Performance, Accessibility, SEO)</li>
+            </ul>
+            <h2>Workflow DevOps trong lab này</h2>
+            <div class="card">
+                <p>Code locally → <code>git push origin main</code> → Actions chạy validate HTML → Deploy sang <code>gh-pages</code> → Lighthouse audit → Website live tại <code>*.github.io</code>.</p>
+                <p>Xem chi tiết trong <a class="link" href="https://github.com/JULY0107/devops-lab1-portfolio/actions">tab Actions</a> và file <code>COMPARISON.md</code>.</p>
+            </div>
+        </main>
+        <footer class="footer">
+            <p><a class="link" href="index.html">← Về trang chủ</a></p>
+        </footer>
+    </div>
+</body>
+</html>
